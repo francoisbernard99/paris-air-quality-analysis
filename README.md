@@ -1,8 +1,8 @@
-# Air Quality Time Series Analysis - France O3
+## Air Quality Time Series Analysis - Paris - Ozone (O3)
 
-A portfolio project demonstrating air quality data analysis using Python and the European Environment Agency (EEA) API.
+A project demonstrating air quality data analysis using Python and the European Environment Agency (EEA) API.
 
-## Project Overview
+### Project Overview
 
 This project analyzes O3 (Ozone) air pollution across France during 2024, demonstrating:
 - Data acquisition from public APIs
@@ -10,7 +10,7 @@ This project analyzes O3 (Ozone) air pollution across France during 2024, demons
 - Time series analysis
 - Statistical analysis and visualization
 
-## Technologies Used
+### Technologies Used
 
 - **Python 3.9+**
 - **pandas** - Data manipulation
@@ -20,9 +20,9 @@ This project analyzes O3 (Ozone) air pollution across France during 2024, demons
 - **requests** - API interaction
 - **pyarrow** - Parquet file handling
 
-## Getting Started
+### Getting Started
 
-### Prerequisites
+#### Prerequisites
 
 ```bash
 python -m venv env
@@ -30,7 +30,7 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Run the Analysis
+#### Run the Analysis
 
 ```bash
 jupyter lab paris_air_quality_analysis.ipynb
@@ -43,7 +43,7 @@ The notebook will:
 4. Generate visualizations
 5. Save processed data
 
-## Project Structure
+### Project Structure
 
 ```
 paris_air_quality_analysis/
@@ -55,7 +55,7 @@ paris_air_quality_analysis/
 └── README.md                         # This file
 ```
 
-## Visualizations
+### Visualizations
 
 The notebook generates 4 key visualizations:
 1. **Time Series Plot** - Daily average O3 trends over 12 months
@@ -63,14 +63,14 @@ The notebook generates 4 key visualizations:
 3. **Daily Pattern** - Hourly variation with confidence intervals
 4. **Weekly Pattern** - Day-of-week comparison
 
-## Key Findings
+### Key Findings
 
 - **Daily Cycle:** O3 shows strong diurnal pattern with peak in afternoon (photochemical production)
 - **Weekly Pattern:** Higher concentrations on weekends (less NO titration from traffic)
 - **Seasonal Variation:** Visible across the 12-month period
 - **Data Quality:** Robust outlier removal and validation
 
-## Data Source
+### Data Source
 
 - **Provider:** European Environment Agency (EEA)
 - **API:** https://eeadmz1-downloads-api-appservice.azurewebsites.net/
@@ -80,30 +80,16 @@ The notebook generates 4 key visualizations:
 - **Pollutant:** O3 (Ozone)
 - **Format:** Parquet files (compressed columnar storage)
 
-## Skills Demonstrated
+### Skills Demonstrated
 
 - API integration and data acquisition
 - Data cleaning and quality control
 - Time series analysis
 - Statistical analysis (percentiles, outliers, trends)
 - Data visualization
-- Scientific Python stack proficiency
+- Scientific Python stack 
 
-## License
+### License
 
-This project is for educational and portfolio purposes. Data is provided by the European Environment Agency.
+Data is provided by the European Environment Agency.
 
-## Author
-
-**François** - Atmospheric Chemistry & Python Programming
-
-## Related Projects
-
-This is Project 1 of a 3-project atmospheric sciences portfolio:
-1. **Air Quality Time Series** (this project)
-2. Satellite Data Analysis (Sentinel-5P)
-3. Regression Analysis (Weather vs Air Quality)
-
----
-
-*Generated for portfolio demonstration purposes*
