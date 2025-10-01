@@ -2,6 +2,11 @@
 
 A project demonstrating air quality data analysis using Python and the European Environment Agency (EEA) API.
 
+
+![Paris cityscape](masood-aslami-pexels.png)
+*Photo credit: Masood Aslami - Paris, France*
+
+
 ### Project Overview
 
 This project analyzes O3 (Ozone) air pollution across France during 2024, demonstrating:
