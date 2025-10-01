@@ -1,24 +1,16 @@
-# Air Quality Time Series Analysis - Paris
+# Air Quality Time Series Analysis - France O3
 
 A portfolio project demonstrating air quality data analysis using Python and the European Environment Agency (EEA) API.
 
-## 🎯 Project Overview
+## Project Overview
 
-This project analyzes SO2 (Sulfur Dioxide) air pollution in Paris during January 2023, demonstrating:
+This project analyzes O3 (Ozone) air pollution across France during 2024, demonstrating:
 - Data acquisition from public APIs
 - Data cleaning and validation
 - Time series analysis
 - Statistical analysis and visualization
 
-## 📊 Key Results
-
-- **Data Coverage:** 9,922 hourly measurements over 31 days
-- **Mean SO2 Concentration:** ~2.06 µg/m³
-- **Peak Hours:** 11:00-12:00 (midday)
-- **Lowest Hours:** 05:00-06:00 (early morning)
-- **Air Quality:** 100% compliance with WHO guidelines
-
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Python 3.9+**
 - **pandas** - Data manipulation
@@ -28,7 +20,7 @@ This project analyzes SO2 (Sulfur Dioxide) air pollution in Paris during January
 - **requests** - API interaction
 - **pyarrow** - Parquet file handling
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -41,17 +33,17 @@ pip install -r requirements.txt
 ### Run the Analysis
 
 ```bash
-jupyter notebook paris_air_quality_analysis.ipynb
+jupyter lab paris_air_quality_analysis.ipynb
 ```
 
 The notebook will:
-1. Download data from EEA API
+1. Download O3 data from EEA API (12 months, all French stations)
 2. Clean and validate the data
 3. Perform statistical analysis
 4. Generate visualizations
 5. Save processed data
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 paris_air_quality_analysis/
@@ -63,29 +55,32 @@ paris_air_quality_analysis/
 └── README.md                         # This file
 ```
 
-## 📈 Visualizations
+## Visualizations
 
 The notebook generates 4 key visualizations:
-1. **Time Series Plot** - SO2 trends over January 2023
-2. **Distribution Histogram** - Concentration frequency distribution
+1. **Time Series Plot** - Daily average O3 trends over 12 months
+2. **Distribution Histogram** - Concentration frequency distribution with WHO guideline
 3. **Daily Pattern** - Hourly variation with confidence intervals
 4. **Weekly Pattern** - Day-of-week comparison
 
-## 🔍 Key Findings
+## Key Findings
 
-- **Daily Cycle:** Clear pattern with peak at midday (~2.19 µg/m³) and minimum in early morning (~1.81 µg/m³)
-- **Weekly Pattern:** Minimal variation between weekdays and weekends
-- **Data Quality:** High completeness (99.7%) with robust outlier removal
-- **Health Impact:** All measurements well below WHO 24-hour guideline (40 µg/m³)
+- **Daily Cycle:** O3 shows strong diurnal pattern with peak in afternoon (photochemical production)
+- **Weekly Pattern:** Higher concentrations on weekends (less NO titration from traffic)
+- **Seasonal Variation:** Visible across the 12-month period
+- **Data Quality:** Robust outlier removal and validation
 
-## 📚 Data Source
+## Data Source
 
 - **Provider:** European Environment Agency (EEA)
 - **API:** https://eeadmz1-downloads-api-appservice.azurewebsites.net/
 - **Dataset:** Validated air quality measurements from official monitoring stations
+- **Location:** All monitoring stations across France
+- **Period:** 12 months (January - December 2024)
+- **Pollutant:** O3 (Ozone)
 - **Format:** Parquet files (compressed columnar storage)
 
-## 💡 Skills Demonstrated
+## Skills Demonstrated
 
 - API integration and data acquisition
 - Data cleaning and quality control
@@ -94,15 +89,15 @@ The notebook generates 4 key visualizations:
 - Data visualization
 - Scientific Python stack proficiency
 
-## 📝 License
+## License
 
 This project is for educational and portfolio purposes. Data is provided by the European Environment Agency.
 
-## 👤 Author
+## Author
 
 **François** - Atmospheric Chemistry & Python Programming
 
-## 🔗 Related Projects
+## Related Projects
 
 This is Project 1 of a 3-project atmospheric sciences portfolio:
 1. **Air Quality Time Series** (this project)
