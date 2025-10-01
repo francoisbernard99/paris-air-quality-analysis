@@ -3,7 +3,7 @@
 A project demonstrating air quality data analysis using Python and the European Environment Agency (EEA) API.
 
 
-![Paris cityscape](masood-aslami-pexels.png)
+![Paris cityscape](images/masood-aslami-pexels.png)
 *Photo credit: Masood Aslami - Paris, France*
 
 
