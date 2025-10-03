@@ -13,6 +13,7 @@ venv/
 # Data files
 data/raw/
 data/processed/
+_archive/
 *.parquet
 *.csv
 *.zip
